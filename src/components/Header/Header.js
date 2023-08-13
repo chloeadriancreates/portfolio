@@ -10,7 +10,7 @@ export default function Header({background}) {
     return (
         <header className={`header header--${background}`}>
             <Link to={"/"}
-            className="header_title" 
+            className={`header_title header_title--${background}`}
             title={language === "en" ? "Home" : "Accueil"}
             lang={language}>
                 Chloé Adrian
@@ -25,5 +25,5 @@ export default function Header({background}) {
                 </div>
             </button>
         </header>
-    )
+    );
 }

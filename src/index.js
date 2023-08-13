@@ -1,12 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.scss';
-import './fonts/CooperHewitt-Book.otf';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.scss";
+import "./fonts/CooperHewitt-Book.otf";
+import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { store } from "./app/store";
 import { Provider } from "react-redux";
-import Home from './pages/Home/Home';
+import Home from "./pages/Home/Home";
 
 const router = createBrowserRouter([
   {

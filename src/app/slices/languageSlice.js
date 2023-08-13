@@ -12,7 +12,7 @@ export const languageSlice = createSlice({
         if(state.language === "en") {
             state.language = "fr";
         } else {
-            state.language = "en"
+            state.language = "en";
         }
     }
   }

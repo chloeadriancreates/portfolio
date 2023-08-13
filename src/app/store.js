@@ -3,6 +3,6 @@ import languageSliceReducer from "./slices/languageSlice";
 
 export const store = configureStore({
   reducer: {
-    language: languageSliceReducer,
+    language: languageSliceReducer
   }
 });

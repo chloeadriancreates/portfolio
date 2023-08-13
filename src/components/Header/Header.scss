@@ -13,14 +13,21 @@
     }
 
     &_title {
-        @include mixins.link;
         font-family: variables.$display;
         font-size: variables.$display-desktop-small;
+
+        &--light {
+            @include mixins.link(variables.$horizontalGradient);
+        }
+
+        &--bright {
+            @include mixins.link(variables.$chocolate);
+        }
     }
 
     &_languageSwitch {
         @include mixins.transition;
-        border: 1px solid variables.$chocolate;
+        border: variables.$border;
         padding: calc(10rem / 16);
         border-radius: 500px;
         cursor: pointer;
@@ -73,7 +80,7 @@
             height: 3rem;
             width: 3rem;
             border-radius: 50%;
-            border: 1px solid variables.$chocolate;
+            border: variables.$border;
             
             &--light {
                 background-color: variables.$coconut;
