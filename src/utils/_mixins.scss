@@ -1,3 +1,5 @@
+@use "./variables";
+
 @mixin transition($duration: 0.4s) {
     transition: all $duration ease;
 }
@@ -9,9 +11,23 @@
     align-items: $align;
 }
 
-@mixin resetLink($color: black) {
-    color: $color;
+@mixin link($color: variables.$horizontalGradient) {
+    @include flex(column, center, flex-start);
+    color: variables.$chocolate;
     text-decoration: none;
+
+    &::after {
+        content: "";
+        @include transition;
+        width: 0%;
+        height: 2px;
+        margin-top: 2px;
+        background: $color;
+    }
+
+    &:hover::after, &:focus::after {
+        width: 100%;
+    }
 }
 
 @mixin mobileAndUp {

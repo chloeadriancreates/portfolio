@@ -1,0 +1,103 @@
+@use "../../utils/mixins";
+@use "../../utils/variables";
+@use "sass:color";
+
+.header {
+    @include mixins.flex(row, space-between, center);
+    width: 100%;
+    padding: 50px 80px;
+
+    &--light {
+        position: sticky;
+        background-color: variables.$coconut;
+    }
+
+    &_title {
+        @include mixins.link;
+        font-family: variables.$display;
+        font-size: variables.$display-desktop-small;
+    }
+
+    &_languageSwitch {
+        @include mixins.transition;
+        border: 1px solid variables.$chocolate;
+        padding: calc(10rem / 16);
+        border-radius: 500px;
+        cursor: pointer;
+
+        &--light {
+            &--en {
+                background-color: variables.$mango;
+                box-shadow: -40px 0px 30px -5px variables.$strawberry inset;
+    
+                &:hover {
+                    background-color: color.scale(variables.$mango, $lightness: 20%);
+                    box-shadow: -40px 0px 30px -5px color.scale(variables.$strawberry, $lightness: 20%) inset;
+                }
+            }
+
+            &--fr {
+                background-color: variables.$mango;
+                box-shadow: 40px 0px 30px -5px variables.$strawberry inset;
+    
+                &:hover {
+                    background-color: color.scale(variables.$mango, $lightness: 20%);
+                    box-shadow: 40px 0px 30px -5px color.scale(variables.$strawberry, $lightness: 20%) inset;
+                }
+            }
+        }
+
+        &--bright {
+            &--en {
+                background: none;
+                box-shadow: 70px 0px 30px -5px variables.$pineapple inset;
+    
+                &:hover {
+                    box-shadow: 70px 0px 30px -5px color.scale(variables.$pineapple, $lightness: 20%) inset;
+                }
+            }
+
+            &--fr {
+                background: none;
+                box-shadow: -70px 0px 30px -5px variables.$pineapple inset;
+    
+                &:hover {
+                    box-shadow: -70px 0px 30px -5px color.scale(variables.$pineapple, $lightness: 20%) inset;
+                }
+            }
+        }
+
+        &_language {
+            @include mixins.transition;
+            @include mixins.flex;
+            height: 3rem;
+            width: 3rem;
+            border-radius: 50%;
+            border: 1px solid variables.$chocolate;
+            
+            &--light {
+                background-color: variables.$coconut;
+            }
+
+            &--bright {
+                background-color: variables.$pineapple;
+            }
+    
+            &--en {
+                margin-right: calc(70rem / 16);
+            }
+    
+            &--fr {
+                margin-left: calc(70rem / 16);
+            }
+    
+            &_text {
+                position: relative;
+                top: 0.15rem;
+                font-family: variables.$copy;
+                font-size: variables.$copy-desktop-small;
+                color: variables.$chocolate;
+            }
+        }
+    }
+}

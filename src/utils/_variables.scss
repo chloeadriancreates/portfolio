@@ -5,21 +5,24 @@ $mango: #FFB381;
 $strawberry: #FFA08C;
 $chocolate: #4F000B;
 
+$verticalGradient: linear-gradient(to bottom, $mango, $strawberry);
+$horizontalGradient: linear-gradient(to right, $mango, $strawberry);
+
 $display: 'Victor Mono', monospace;
 $copy: "CooperHewitt", sans-serif;
 
-$display-desktop-large: 72px;
-$display-desktop-medium: 60px;
-$display-desktop-small: 36px;
+$display-desktop-large: 4.5rem;
+$display-desktop-medium: 3.75rem;
+$display-desktop-small: 2.25rem;
 
-$display-mobile-large: 48px;
-$display-mobile-medium: 36px;
-$display-mobile-small: 24px;
+$display-mobile-large: 3rem;
+$display-mobile-medium: 2.25rem;
+$display-mobile-small: 1.5rem;
 
-$copy-desktop-large: 42px;
-$copy-desktop-medium: 30px;
-$copy-desktop-small: 24px;
+$copy-desktop-large: 2.5rem;
+$copy-desktop-medium: 2rem;
+$copy-desktop-small: 1.5rem;
 
-$copy-mobile-large: 20px;
-$copy-mobile-medium: 18px;
-$copy-mobile-small: 16px;
+$copy-mobile-large: 1.5rem;
+$copy-mobile-medium: 1.25rem;
+$copy-mobile-small: 1rem;
