@@ -1,0 +1,21 @@
+@use "./utils/variables";
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono&display=swap');
+
+@font-face {
+  font-family: "CooperHewitt";
+  src: url("/fonts/CooperHewitt-Book.otf") format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  font-family: variables.$copy;
+  line-height: 1.4;
+}
