@@ -8,7 +8,7 @@ export default function Header({background}) {
     const { language } = useSelector((state) => state.language);
 
     return (
-        <header className={`header header--${background}`}>
+        <header id={`header_${background}`} className={`header header--${background}`}>
             <Link to={"/"}
             className={`header_title header_title--${background}`}
             title={language === "en" ? "Home" : "Accueil"}

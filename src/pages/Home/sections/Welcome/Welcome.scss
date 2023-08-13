@@ -3,24 +3,36 @@
 
 .welcome {
     @include mixins.flex(column, flex-start, center);
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: variables.$verticalGradient;
 
-    &_content {
-        width: 85%;
+    &_title {
+        font-family: variables.$display;
+        font-size: variables.$display-desktop-large;
+        text-align: center;
+    }
 
-        &_title {
-            font-family: variables.$display;
-            font-size: variables.$display-desktop-large;
-            text-align: center;
-        }
-    
-        &_caption {
-            font-family: variables.$copy;
-            font-size: variables.$copy-desktop-large;
-            text-align: center;
-            margin: 10vh 0;
+    &_caption {
+        font-family: variables.$copy;
+        font-size: variables.$copy-desktop-large;
+        text-align: center;
+        margin: 10vh 0;
+        width: 85%;
+    }
+
+    &_button {
+        @include mixins.transition;
+        color: variables.$chocolate;
+        font-family: variables.$display;
+        font-size: variables.$display-desktop-medium;
+        background-color: variables.$coconut;
+        border: variables.$border;
+        padding: 30px 40px;
+
+        &:hover, &:focus {
+            cursor: pointer;
+            box-shadow: 15px 15px 0 variables.$chocolate;
         }
     }
 }

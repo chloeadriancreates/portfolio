@@ -2,6 +2,7 @@ import "./Home.scss";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import Welcome from "./sections/Welcome/Welcome";
+import Header from "../../components/Header/Header";
 
 export default function Home() {
     const { language } = useSelector((state) => state.language);
@@ -17,6 +18,7 @@ export default function Home() {
     return (
         <div>
             <Welcome />
+            <Header background="light" />
         </div>
     );
 }
