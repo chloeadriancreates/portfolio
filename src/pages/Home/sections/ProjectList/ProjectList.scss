@@ -1,0 +1,19 @@
+@use "../../../../utils/mixins";
+@use "../../../../utils/variables";
+
+.projects {
+    margin: 110px 80px;
+
+    &_title {
+        font-family: variables.$display;
+        font-size: variables.$display-desktop-large;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    &_list {
+        display: grid;
+        grid-gap: 60px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

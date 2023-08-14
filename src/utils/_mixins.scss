@@ -11,6 +11,11 @@
     align-items: $align;
 }
 
+@mixin resetLink($color: variables.$chocolate) {
+    color: $color;
+    text-decoration: none;
+}
+
 @mixin link($color: variables.$horizontalGradient) {
     @include flex(column, center, flex-start);
     color: variables.$chocolate;

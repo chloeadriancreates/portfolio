@@ -1,0 +1,60 @@
+@use "../../../../../utils/mixins";
+@use "../../../../../utils/variables";
+
+.projectCard {
+    @include mixins.resetLink;
+    position: relative;
+    width: 100%;
+    border: variables.$border;
+    cursor: pointer;
+
+    &::after {
+        content: "";
+        @include mixins.transition;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: variables.$verticalGradient;
+        top: 20px;
+        left: 20px;
+        z-index: -1;
+    }
+
+    &_thumbnail {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &_caption {
+        @include mixins.transition;
+        @include mixins.flex(column, center, center);
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: variables.$verticalGradient;
+        box-shadow: 20px 20px 0 variables.$chocolate;
+        padding: 40px;
+
+        &_name {
+            font-family: variables.$display;
+            font-size: variables.$display-desktop-medium;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        &_type {
+            font-family: variables.$copy;
+            font-size: variables.$copy-desktop-medium;
+            text-align: center;
+        }
+    }
+
+    &:hover &_caption, &:focus &_caption {
+        opacity: 1;
+    }
+}

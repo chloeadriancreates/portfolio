@@ -6,6 +6,7 @@
     @include mixins.flex(row, space-between, center);
     width: 100%;
     padding: 30px;
+    position: relative;
 
     @include mixins.mobileAndUp {
         padding: 50px 80px;
@@ -15,6 +16,16 @@
         position: sticky;
         top: 0;
         background-color: variables.$coconut;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: variables.$horizontalGradient;
+        }
     }
 
     &_title {
