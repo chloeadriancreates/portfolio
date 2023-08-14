@@ -9,26 +9,54 @@
 
     &_title {
         font-family: variables.$display;
-        font-size: variables.$display-desktop-large;
+        font-size: variables.$display-mobile-large;
         text-align: center;
+        margin-top: 50px;
+
+        @include mixins.mobileAndUp {
+            font-size: variables.$display-desktop-medium;
+            margin-top: 0;
+        }
+
+        @include mixins.laptopAndUp {
+            font-size: variables.$display-desktop-large;
+        }
     }
 
     &_caption {
         font-family: variables.$copy;
-        font-size: variables.$copy-desktop-large;
+        font-size: variables.$copy-mobile-large;
         text-align: center;
         margin: 10vh 0;
         width: 85%;
+
+        @include mixins.mobileAndUp {
+            font-size: variables.$copy-desktop-medium;
+        }
+
+        @include mixins.laptopAndUp {
+            font-size: variables.$copy-desktop-large;
+        }
     }
 
     &_button {
         @include mixins.transition;
         color: variables.$chocolate;
         font-family: variables.$display;
-        font-size: variables.$display-desktop-medium;
+        font-size: variables.$display-mobile-small;
         background-color: variables.$coconut;
         border: variables.$border;
         padding: 30px 40px;
+        margin: 0 30px;
+
+        @include mixins.mobileAndUp {
+            font-size: variables.$display-desktop-small;
+            margin: 0;
+        }
+
+        @include mixins.laptopAndUp {
+            font-size: variables.$display-desktop-medium;
+        }
 
         &:hover, &:focus {
             cursor: pointer;

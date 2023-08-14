@@ -31,7 +31,7 @@
 }
 
 @mixin mobileAndUp {
-    @media screen and (min-width: 550px){
+    @media screen and (min-width: 600px){
         @content;
     }
 }
@@ -43,7 +43,7 @@
 }
 
 @mixin laptopAndUp {
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1000px){
         @content;
     }
 }
