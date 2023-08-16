@@ -1,0 +1,122 @@
+@use "../../../../utils/mixins";
+@use "../../../../utils/variables";
+
+.about {
+    margin: 50px 30px;
+
+    @include mixins.mobileAndUp {
+        margin: 110px 80px;
+    }
+
+    &_illustration {
+        @include mixins.flex(column, center, center);
+        width: 100%;
+
+        @include mixins.tabletAndUp {
+            flex-direction: row;
+        }
+
+        &_card {
+            border-image: linear-gradient(variables.$banana, variables.$strawberry) 30;
+            width: 90%;
+            border-width: 20px;
+            border-style: solid;
+            position: relative;
+
+            @include mixins.tabletAndUp {
+                width: 45%;
+            }
+
+            &--old {
+                transform: rotate(-3deg);
+                z-index: 2;
+            }
+
+            &--new {
+                transform: rotate(3deg);
+                top: -20px;
+
+                @include mixins.mobileAndUp {
+                    transform: rotate(6deg);
+                    left: -10px;
+                    top: -50px;
+                }
+
+                @include mixins.tabletAndUp {
+                    left: -30px;
+                    top: -30px;
+                }
+            }
+
+            &_photo {
+                width: 100%;
+                border: variables.$border;
+                display: block;
+                position: relative;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+            }
+
+            &_caption {
+                font-family: variables.$copy;
+                font-size: variables.$copy-mobile-medium;
+                padding: 30px;
+                border: variables.$border;
+                border-top: none;
+                background: variables.$coconut;
+                text-align: center;
+
+                @include mixins.tinyScreens {
+                    padding: 20px;
+                    font-size: variables.$copy-mobile-small;
+                }
+    
+                @include mixins.mobileAndUp {
+                    font-size: variables.$copy-desktop-small;
+                }
+            }
+        }
+    }
+
+    &_caption {
+        width: 100%;
+        margin-bottom: 50px;
+
+        @include mixins.mobileAndUp {
+            margin-bottom: 120px;
+        }
+
+        &_title {
+            font-family: variables.$display;
+            font-size: variables.$display-mobile-medium;
+            text-align: center;
+            margin-bottom: 50px;
+    
+            @include mixins.mobileAndUp {
+                font-size: variables.$display-desktop-medium;
+            }
+    
+            @include mixins.laptopAndUp {
+                font-size: variables.$display-desktop-large;
+            }
+        }
+
+        &_text {
+            font-family: variables.$copy;
+            font-size: variables.$copy-mobile-medium;
+            text-align: justify;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+
+            @include mixins.tinyScreens {
+                font-size: variables.$copy-mobile-small;
+            }
+
+            @include mixins.mobileAndUp {
+                font-size: variables.$copy-desktop-small;
+            }
+        }
+    }
+}

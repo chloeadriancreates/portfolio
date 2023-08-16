@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import Welcome from "./sections/Welcome/Welcome";
 import Header from "../../components/Header/Header";
 import ProjectList from "./sections/ProjectList/ProjectList";
+import About from "./sections/About/About";
 
 export default function Home() {
     const { language } = useSelector((state) => state.language);
@@ -21,6 +22,7 @@ export default function Home() {
             <Welcome />
             <Header background="light" />
             <ProjectList />
+            <About />
         </div>
     );
 }
