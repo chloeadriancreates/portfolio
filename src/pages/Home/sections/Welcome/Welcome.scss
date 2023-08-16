@@ -13,6 +13,10 @@
         text-align: center;
         margin-top: 60px;
 
+        @include mixins.tinyScreens {
+            margin-top: 0;
+        }
+
         @include mixins.mobileAndUp {
             font-size: variables.$display-desktop-medium;
             margin-top: 0;
@@ -27,7 +31,7 @@
         font-family: variables.$copy;
         font-size: variables.$copy-mobile-large;
         text-align: center;
-        margin: 10vh 0;
+        margin: 8vh 0;
         width: 85%;
 
         @include mixins.mobileAndUp {
