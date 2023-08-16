@@ -1,0 +1,102 @@
+@use "../../utils/mixins";
+@use "../../utils/variables";
+@use "sass:color";
+
+.footer {
+    @include mixins.flex(column, center, center);
+    background: variables.$horizontalGradient;
+    padding: 40px;
+
+    @include mixins.tabletAndUp {
+        @include mixins.flex(row-reverse, space-between, center);
+        padding: 40px 80px;
+    }
+
+    &_text {
+        @include mixins.flex(column, space-between, center);
+        font-size: variables.$copy-mobile-small;
+        text-align: center;
+
+        @include mixins.mobileAndUp {
+            font-size: variables.$copy-desktop-small;
+        }
+
+        @include mixins.tabletAndUp {
+            align-items: flex-start;
+            text-align: start;
+        }
+
+        &_copyright {
+            margin-bottom: 0.75rem;
+        }
+
+        &_link {
+            @include mixins.link(variables.$chocolate);
+        }
+    }
+
+    &_nav {
+        @include mixins.flex(row, space-between, center);
+        margin-bottom: 30px;
+
+        @include mixins.tabletAndUp {
+            justify-content: center;
+            margin-left: 80px;
+            margin-bottom: 0;
+        }
+        
+        &_category {
+            position: relative;
+            @include mixins.flex(column, center, center);
+
+            &:not(:first-child) {
+                margin-left: 60px;
+            }
+
+            &_button {
+                background: none;
+                border: none;
+                cursor: pointer;
+    
+                &_icon {
+                    color: variables.$chocolate;
+                    font-size: 3rem;
+                }
+            }
+
+            &_label {
+                @include mixins.transition;
+                position: absolute;
+                width: 9rem;
+                top: -200%;
+                z-index: 5;
+                opacity: 0;
+                padding: 1rem;
+                background: variables.$coconut;
+                border: variables.$border;
+                font-size: variables.$copy-mobile-small;
+                text-align: center;
+
+                @include mixins.mobileAndUp {
+                    top: -300%;
+                    font-size: variables.$copy-desktop-small;
+                    width: 11rem;
+                }
+            }
+
+            &_button:hover + &_label, &_button:focus + &_label {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@include mixins.tinyScreens {
+    #mail-label {
+        left: 0;
+    }
+
+    #linkedin-label {
+        right: 0;
+    }
+}
