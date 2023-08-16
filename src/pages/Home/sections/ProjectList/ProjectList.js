@@ -1,45 +1,62 @@
-import ProjectCard from "./ProjectCard/ProjectCard";
 import "./ProjectList.scss";
-import { useSelector } from "react-redux";
+import { useEffect, useState } from "react";
+import ProjectCard from "./ProjectCard/ProjectCard";
+import { useDispatch, useSelector } from "react-redux";
+import { createTags, selectTag } from "../../../../app/slices/projectSlice";
 
 export default function ProjectList() {
+    const dispatch = useDispatch();
     const { language } = useSelector((state) => state.language);
-    const projectList = [{
-        name: "Liam O'Brien",
-        type: {
-            en: "UI Design",
-            fr: "Design UI"
-        },
-        thumbnail: "thumbnail1.png",
-        tags: ["React, Sass"]
-    },
-    {
-        name: "Marisha Ray",
-        type: {
-            en: "Front-end development",
-            fr: "Développement front-end"
-        },
-        thumbnail: "thumbnail2.png",
-        tags: ["React, Redux"]
-    },
-    {
-        name: "Taliesin Jaffe",
-        type: {
-            en: "UX Design",
-            fr: "Design UX"
-        },
-        thumbnail: "thumbnail3.png",
-        tags: ["Figma, CSS"]
-    }];
+    const { projects } = useSelector((state) => state.projects);
+    const { tags } = useSelector((state) => state.projects);
+    const [filteredProjects, setFilteredProjects] = useState([]);
+
+    useEffect(() => {
+        dispatch(createTags());
+    }, [projects, dispatch]);
+
+    useEffect(() => {
+        const filterProjects = () => {
+            const selectedTags = tags.filter(tag => tag.selected);
+            if(selectedTags.length) {
+                return projects.filter(project => {
+                    const testSelectedTags = [];
+                    selectedTags.forEach(selectedTag => testSelectedTags.push(project.tags.includes(selectedTag.skill)));
+                    return testSelectedTags.every((element) => element === true);
+                });
+            } else {
+                return projects;
+            }
+        };
+        if(tags && projects) {
+            setFilteredProjects(filterProjects());
+        }
+    }, [tags, projects]);
 
     return (
         <section className="projects">
             <h1 className="projects_title">
                 {language === "fr" ? "Projets" : "Projects"}
             </h1>
-            <div className="projects_list">
-                { projectList.map(project => <ProjectCard key={projectList.indexOf(project)} project={project} />) }
+            <div className="projects_filter">
+                <p className="projects_filter_title">
+                    {language === "fr" ? "Filtrer par compétence" : "Filter by skill"}
+                </p>
+                <div className="projects_filter_taglist">
+                    { tags && tags.map(tag => <button
+                    onClick={() => dispatch(selectTag({tag: tag}))}
+                    className={`projects_filter_taglist_tag 
+                    projects_filter_taglist_tag--${tag.selected ? "selected" : "notSelected"}`}
+                    key={tag.skill}>{tag.skill}</button>) }
+                </div>
             </div>
+            { filteredProjects.length ?
+                <div className="projects_list">
+                    { filteredProjects.map(project => <ProjectCard key={projects.indexOf(project)} project={project} />)}
+                </div>
+            :
+                <p className="projects_list_error">{language === "fr" ? "Aucun projet n'utilise toutes les compétences sélectionnées. Essayez une autre combinaison !" : "No project uses all the skills selected. Try another combo!"}</p>
+            }
         </section>
     );
 }
