@@ -104,7 +104,6 @@
         &_text {
             font-family: variables.$copy;
             font-size: variables.$copy-mobile-medium;
-            text-align: justify;
 
             &:not(:last-child) {
                 margin-bottom: 30px;
@@ -116,6 +115,7 @@
 
             @include mixins.mobileAndUp {
                 font-size: variables.$copy-desktop-small;
+                text-align: justify;
             }
         }
     }
