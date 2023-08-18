@@ -71,7 +71,7 @@
                 top: -200%;
                 z-index: 5;
                 opacity: 0;
-                padding: 1rem;
+                padding: 1.2rem;
                 background: variables.$coconut;
                 border: variables.$border;
                 font-size: variables.$copy-mobile-small;
@@ -80,7 +80,6 @@
                 @include mixins.mobileAndUp {
                     top: -300%;
                     font-size: variables.$copy-desktop-small;
-                    width: 11rem;
                 }
             }
 
