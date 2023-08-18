@@ -7,7 +7,21 @@ export default function ProjectCard({project}) {
 
     return (
         <Link className="projectCard">
-            <img src={`./img/${project.thumbnail}`} className="projectCard_thumbnail" alt={project.name} />
+            <picture className="projectCard_thumbnail">
+                <source
+                    srcSet={`./img/${project.key}/thumbnail-500w.jpg`}
+                    media="(max-width: 355px)"
+                />
+                <source
+                    srcSet={`./img/${project.key}/thumbnail-1000w.jpg`}
+                    media="(max-width: 730px), (min-width: 800px) and (max-width: 1800px)"
+                />
+                <img
+                    srcSet={`./img/${project.key}/thumbnail-2000w.jpg`}
+                    alt={project.name}
+                    className="projectCard_thumbnail_photo"
+                />
+            </picture>
             <div className="projectCard_caption">
                 <h3 className="projectCard_caption_name">{project.name}</h3>
                 <h4 className="projectCard_caption_type">{project.type[language]}</h4>

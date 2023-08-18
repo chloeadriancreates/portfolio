@@ -1,33 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    projects: [{
-        name: "Liam O'Brien",
-        type: {
-            en: "UI Design",
-            fr: "Design UI"
-        },
-        thumbnail: "thumbnail1.png",
-        tags: ["React", "HTML"]
-    },
-    {
-        name: "Marisha Ray",
-        type: {
-            en: "Front-end development",
-            fr: "Développement front-end"
-        },
-        thumbnail: "thumbnail2.png",
-        tags: ["CSS", "Redux"]
-    },
-    {
-        name: "Taliesin Jaffe",
-        type: {
-            en: "UX Design",
-            fr: "Design UX"
-        },
-        thumbnail: "thumbnail3.png",
-        tags: ["Figma", "Sass"]
-    }],
+    projects: [],
     tags: null
 };
 
@@ -35,6 +9,9 @@ export const projectSlice = createSlice({
   name: "language",
   initialState,
   reducers: {
+    setProjects: (state, action) => {
+        state.projects = action.payload.projects;
+    },
     createTags: (state) => {
         let tempTags = [];
         state.projects.forEach(project => project.tags.forEach(tag => tempTags.push(tag)));
@@ -51,5 +28,5 @@ export const projectSlice = createSlice({
   }
 });
 
-export const { createTags, selectTag } = projectSlice.actions;
+export const { setProjects, createTags, selectTag } = projectSlice.actions;
 export default projectSlice.reducer;

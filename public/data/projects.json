@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Fisheye",
+        "key": "fisheye",
+        "type": {
+            "en": "Front-end development",
+            "fr": "Développement front-end"
+        },
+        "tags": ["React", "Redux", "JavaScript", "Sass"]
+    },
+    {
+        "name": "HRNet",
+        "key": "hrnet",
+        "type": {
+            "en": "Front-end development",
+            "fr": "Développement front-end"
+        },
+        "tags": ["React", "Redux", "JavaScript", "CSS"]
+    },
+    {
+        "name": "Learn@Home",
+        "key": "learn@home",
+        "type": {
+            "en": "UX/UI design",
+            "fr": "Design UX/UI"
+        },
+        "tags": ["Figma"]
+    },
+    {
+        "name": "Ohmyfood",
+        "key": "ohmyfood",
+        "type": {
+            "en": "Front-end development",
+            "fr": "Développement front-end"
+        },
+        "tags": ["React", "Redux", "JavaScript", "Sass"]
+    },
+    {
+        "name": "Photo organizer",
+        "key": "photoorganizer",
+        "type": {
+            "en": "Front-end development",
+            "fr": "Développement front-end"
+        },
+        "tags": ["React", "JavaScript", "CSS"]
+    }
+]
