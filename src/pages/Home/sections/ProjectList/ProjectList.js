@@ -2,7 +2,8 @@ import "./ProjectList.scss";
 import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import { useDispatch, useSelector } from "react-redux";
-import { setProjects, createTags, selectTag } from "../../../../app/slices/projectSlice";
+import { createTags, selectTag } from "../../../../app/slices/projectSlice";
+import { getProjects } from "../../../../utils/getProjects";
 
 export default function ProjectList() {
     const dispatch = useDispatch();
@@ -14,17 +15,7 @@ export default function ProjectList() {
     useEffect(() => {
         console.log(projects);
         if(!projects.length) {
-            const fetchProjects = async() => {
-                console.log("hello");
-                try {
-                    const response = await fetch("/data/projects.json");
-                    const responseJS = await response.json();
-                    dispatch(setProjects({projects: responseJS}));
-                } catch(error) {
-                    console.log(error);
-                }
-            };
-            fetchProjects();
+            getProjects(dispatch);
         } else {
             dispatch(createTags());
         }

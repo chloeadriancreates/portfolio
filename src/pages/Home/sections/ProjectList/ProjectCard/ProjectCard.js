@@ -6,7 +6,7 @@ export default function ProjectCard({project}) {
     const { language } = useSelector((state) => state.language);
 
     return (
-        <Link className="projectCard">
+        <Link to={`/project/${project.key}`} className="projectCard">
             <picture className="projectCard_thumbnail">
                 <source
                     srcSet={`./img/${project.key}/thumbnail-500w.jpg`}

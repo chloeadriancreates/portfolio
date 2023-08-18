@@ -6,7 +6,57 @@
             "en": "Front-end development",
             "fr": "Développement front-end"
         },
-        "tags": ["React", "Redux", "JavaScript", "Sass"]
+        "tags": ["React", "Redux", "JavaScript", "Sass"],
+        "description": {
+            "en": "Oh hi what a good description",
+            "fr": "Une super description"
+        },
+        "images": [
+            {
+                "file": "illustration1",
+                "alt": {
+                    "en": "Fisheye homepage on desktop",
+                    "fr": "Page d'accueil de Fisheye sur desktop"
+                }
+            },
+            {
+                "file": "illustration2",
+                "alt": {
+                    "en": "Fisheye profile page on desktop",
+                    "fr": "Page de profil de Fisheye sur desktop"
+                }
+            },
+            {
+                "file": "illustration3",
+                "alt": {
+                    "en": "Fisheye gallery view on tablet",
+                    "fr": "Vue galerie de Fisheye sur tablette"
+                }
+            },
+            {
+                "file": "illustration4",
+                "alt": {
+                    "en": "Fisheye contact form on tablet",
+                    "fr": "Formulaire de contact de Fisheye sur tablette"
+                }
+            }
+        ],
+        "links": [
+            {
+                "link": "#",
+                "title": {
+                    "en": "See website",
+                    "fr": "Voir le site"
+                }
+            },
+            {
+                "link": "https://github.com/chloeadriancreates/fisheye",
+                "title": {
+                    "en": "See code on GitHub",
+                    "fr": "Voir le code sur GitHub"
+                }
+            }
+        ]
     },
     {
         "name": "HRNet",
@@ -15,7 +65,43 @@
             "en": "Front-end development",
             "fr": "Développement front-end"
         },
-        "tags": ["React", "Redux", "JavaScript", "CSS"]
+        "tags": ["React", "Redux", "JavaScript", "CSS"],
+        "description": {
+            "en": "Oh hi what a good descriptionOh hi what a good descriptionOh hi what a good descriptionOh hi what a good descriptionOh hi what a good descriptionOh hi what a good descriptionOh hi what a good descriptionOh hi what a good descriptionOh hi what a good descriptionOh hi what a good descriptionOh hi what a good descriptionOh hi what a good description",
+            "fr": "Une super description"
+        },
+        "images": [
+            {
+                "file": "illustration1",
+                "alt": {
+                    "en": "HRNet employee creation page",
+                    "fr": "Page de création d'employé d'HRNet"
+                }
+            },
+            {
+                "file": "illustration2",
+                "alt": {
+                    "en": "HRNet employee list page",
+                    "fr": "Page de liste d'employés d'HRNet"
+                }
+            }
+        ],
+        "links": [
+            {
+                "link": "#",
+                "title": {
+                    "en": "See website",
+                    "fr": "Voir le site"
+                }
+            },
+            {
+                "link": "https://github.com/chloeadriancreates/hrnet",
+                "title": {
+                    "en": "See code on GitHub",
+                    "fr": "Voir le code sur GitHub"
+                }
+            }
+        ]
     },
     {
         "name": "Learn@Home",
@@ -24,7 +110,113 @@
             "en": "UX/UI design",
             "fr": "Design UX/UI"
         },
-        "tags": ["Figma"]
+        "tags": ["Figma"],
+        "description": {
+            "en": "Oh hi what a good description",
+            "fr": "Une super description"
+        },
+        "images": [
+            {
+                "file": "illustration1",
+                "alt": {
+                    "en": "Sketch of mobile screens for Learn@Home's dashboard and chat",
+                    "fr": "Croquis d'écrans mobile pour le dashboard et le chat de Learn@Home"
+                }
+            },
+            {
+                "file": "illustration2",
+                "alt": {
+                    "en": "Sketch of mobile screens for Learn@Home's calendar",
+                    "fr": "Croquis d'écrans mobile pour le calendrier de Learn@Home"
+                }
+            },
+            {
+                "file": "illustration3",
+                "alt": {
+                    "en": "Sketch of a desktop screen for Learn@Home's dashboard",
+                    "fr": "Croquis d'écran desktop pour le dashboard de Learn@Home"
+                }
+            },
+            {
+                "file": "illustration4",
+                "alt": {
+                    "en": "Sketch of a desktop screen for Learn@Home's calendar",
+                    "fr": "Croquis d'écran desktop pour le calendrier de Learn@Home"
+                }
+            },
+            {
+                "file": "illustration5",
+                "alt": {
+                    "en": "Wireframes of mobile screens for Learn@Home's dashboard and tasklist",
+                    "fr": "Wireframes d'écrans mobile pour le dashboard et la liste de tâches de Learn@Home"
+                }
+            },
+            {
+                "file": "illustration6",
+                "alt": {
+                    "en": "Wireframe of a desktop screen for Learn@Home's dashboard",
+                    "fr": "Wireframe d'écran desktop pour le dashboard de Learn@Home"
+                }
+            },
+            {
+                "file": "illustration7",
+                "alt": {
+                    "en": "Wireframe of a desktop screen for Learn@Home's calendar",
+                    "fr": "Wireframe d'écran desktop pour le calendrier de Learn@Home"
+                }
+            },
+            {
+                "file": "illustration8",
+                "alt": {
+                    "en": "Design of mobile screens for Learn@Home's dashboard and settings",
+                    "fr": "Maquette d'écrans mobile pour le dashboard et les paramètres de Learn@Home"
+                }
+            },
+            {
+                "file": "illustration9",
+                "alt": {
+                    "en": "Design of mobile screens for Learn@Home's profile and task details",
+                    "fr": "Maquette d'écrans mobile pour le profil et les détails de tâches de Learn@Home"
+                }
+            },
+            {
+                "file": "illustration10",
+                "alt": {
+                    "en": "Design of a desktop screen for Learn@Home's dashboard",
+                    "fr": "Maquette d'écran desktop pour le dashboard de Learn@Home"
+                }
+            },
+            {
+                "file": "illustration11",
+                "alt": {
+                    "en": "Design of a desktop screen for Learn@Home's tasklist",
+                    "fr": "Maquette d'écran desktop pour la liste de tâches de Learn@Home"
+                }
+            },
+            {
+                "file": "illustration12",
+                "alt": {
+                    "en": "Design of a desktop screen for Learn@Home's calendar",
+                    "fr": "Maquette d'écran desktop pour le calendrier de Learn@Home"
+                }
+            }
+        ],
+        "links": [
+            {
+                "link": "https://www.figma.com/proto/89n2M6mKT4yzRTs7tgY079/Learn%40Home?page-id=231%3A2348&type=design&node-id=231-3037&viewport=597%2C265%2C0.05&t=IGR2DMYNSOhK1TGX-1&scaling=contain&starting-point-node-id=231%3A3037&show-proto-sidebar=1&mode=design",
+                "title": {
+                    "en": "See prototype",
+                    "fr": "Voir le prototype"
+                }
+            },
+            {
+                "link": "https://www.figma.com/file/89n2M6mKT4yzRTs7tgY079/Learn%40Home?type=design&node-id=231%3A2348&mode=design&t=W2m71cSQqalGuik9-1",
+                "title": {
+                    "en": "See Figma file",
+                    "fr": "Voir le fichier Figma"
+                }
+            }
+        ]
     },
     {
         "name": "Ohmyfood",
@@ -33,7 +225,44 @@
             "en": "Front-end development",
             "fr": "Développement front-end"
         },
-        "tags": ["React", "Redux", "JavaScript", "Sass"]
+        "tags": ["React", "Redux", "JavaScript", "Sass"],
+        "description": {
+            "en": "Oh hi what a good description",
+            "fr": "Une super description"
+        },
+        "images": [
+            {
+                "file": "illustration1",
+                "alt": {
+                    "en": "Ohmyfood menu page and homepage on mobile",
+                    "fr": "Page de menu et d'accueil d'Ohmyfood sur mobile"
+                }
+            },
+            {
+                "file": "illustration2",
+                "alt": {
+                    "en": "Ohmyfood homepage on tablet",
+                    "fr": "Page d'accueil d'Ohmyfood sur tablette"
+                }
+            }
+        ],
+        "links": [
+            {
+                "link": "#",
+                "title": {
+                    "en": "See website",
+                    "fr": "Voir le site"
+                }
+            },
+            {
+                "link": "https://github.com/chloeadriancreates/ohmyfood",
+                "title": {
+                    "en": "See code on GitHub",
+                    "fr": "Voir le code sur GitHub"
+                }
+            }
+        ]
+        
     },
     {
         "name": "Photo organizer",
@@ -42,6 +271,35 @@
             "en": "Front-end development",
             "fr": "Développement front-end"
         },
-        "tags": ["React", "JavaScript", "CSS"]
+        "tags": ["React", "JavaScript", "CSS"],
+        "description": {
+            "en": "Oh hi what a good description",
+            "fr": "Une super description"
+        },
+        "images": [
+            {
+                "file": "illustration1",
+                "alt": {
+                    "en": "Photo organizer screenshot",
+                    "fr": "Capture d'écran de Photo organizer"
+                }
+            }
+        ],
+        "links": [
+            {
+                "link": "#",
+                "title": {
+                    "en": "See website",
+                    "fr": "Voir le site"
+                }
+            },
+            {
+                "link": "https://github.com/chloeadriancreates/photo-organizer",
+                "title": {
+                    "en": "See code on GitHub",
+                    "fr": "Voir le code sur GitHub"
+                }
+            }
+        ]
     }
 ]
