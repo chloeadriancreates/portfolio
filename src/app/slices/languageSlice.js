@@ -11,8 +11,10 @@ export const languageSlice = createSlice({
     switchLanguage: (state) => {
         if(state.language === "en") {
             state.language = "fr";
+            document.querySelector("html")?.setAttribute("lang", "fr");
         } else {
             state.language = "en";
+            document.querySelector("html")?.setAttribute("lang", "en");
         }
     }
   }

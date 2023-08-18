@@ -11,8 +11,7 @@ export default function Header({background}) {
         <header id={`header_${background}`} className={`header header--${background}`}>
             <Link to={"/"}
             className={`header_title header_title--${background}`}
-            title={language === "fr" ? "Accueil" : "Home"}
-            lang={language}>
+            title={language === "fr" ? "Accueil" : "Home"}>
                 Chloé Adrian
             </Link>
             <button

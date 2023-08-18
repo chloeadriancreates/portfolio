@@ -40,17 +40,16 @@ export default function About() {
                 <article className="about_illustration_card about_illustration_card--old">
                     <picture>
                         <source
-                            srcSet={`/img/aboutOld-500w.jpg`}
+                            srcSet={`/img/about/aboutOld-500w.jpg`}
                             media="(max-width: 380px)"
                         />
                         <source
-                            srcSet={`/img/aboutOld-1000w.jpg`}
+                            srcSet={`/img/about/aboutOld-1000w.jpg`}
                             media="(max-width: 740px), (min-width: 800px) and (max-width: 1270px)"
                         />
                         <img
-                            src={`/img/aboutOld-2000w.jpg`}
+                            src={`/img/about/aboutOld-2000w.jpg`}
                             alt={language === "fr" ? "Chloé Adrian en 1999" : "Chloé Adrian, circa 1999"}
-                            lang={language}
                             className="about_illustration_card_photo"
                         />
                     </picture>
@@ -59,17 +58,16 @@ export default function About() {
                 <article className="about_illustration_card about_illustration_card--new">
                     <picture>
                         <source
-                            srcSet={`/img/aboutNew-500w.jpg`}
+                            srcSet={`/img/about/aboutNew-500w.jpg`}
                             media="(max-width: 380px)"
                         />
                         <source
-                            srcSet={`/img/aboutNew-1000w.jpg`}
+                            srcSet={`/img/about/aboutNew-1000w.jpg`}
                             media="(max-width: 740px), (min-width: 800px) and (max-width: 1270px)"
                         />
                         <img
-                            src={`/img/aboutNew-2000w.jpg`}
+                            src={`/img/about/aboutNew-2000w.jpg`}
                             alt={language === "fr" ? "Chloé Adrian en 2021" : "Chloé Adrian, circa 2021"}
-                            lang={language}
                             className="about_illustration_card_photo"
                         />
                     </picture>

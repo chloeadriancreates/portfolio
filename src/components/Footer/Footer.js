@@ -46,7 +46,6 @@ export default function Footer() {
                 <div className="footer_nav_category">
                     <a href="https://github.com/chloeadriancreates?tab=stars"
                     title={language === "fr" ? "Profil GitHub" : "GitHub profile"}
-                    lang={language}
                     target="_blank"
                     rel="noreferrer"
                     className="footer_nav_category_button">
@@ -57,7 +56,6 @@ export default function Footer() {
                 <div className="footer_nav_category">
                     <a href="https://www.linkedin.com/in/chloeadriancreates/"
                     title={language === "fr" ? "Profil LinkedIn" : "LinkedIn profile"}
-                    lang={language}
                     target="_blank"
                     rel="noreferrer"
                     className="footer_nav_category_button">
@@ -69,8 +67,7 @@ export default function Footer() {
             <div className="footer_text">
                 <p className="footer_text_copyright">{language === "fr" ? "Fait avec ♥ par Chloé Adrian en 2023" : "Made with ♥ by Chloé Adrian in 2023"}</p>
                 <Link to={"/"}
-                className="footer_text_link"
-                lang={language}>
+                className="footer_text_link">
                     {language === "fr" ? "Mentions légales" : "General Conditions of Use"}
                 </Link>
             </div>
