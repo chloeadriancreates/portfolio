@@ -94,8 +94,8 @@
         &_description {
             font-size: variables.$copy-desktop-small;
 
-            @include mixins.mobileAndUp {
-                font-size: variables.$copy-desktop-medium;
+            &:first-of-type {
+                font-style: italic;
             }
         }
 

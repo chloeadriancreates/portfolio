@@ -65,12 +65,12 @@ export default function Project() {
                         <div className="project_caption_tags">
                             { project.tags.map(tag => <p className="project_caption_tags_tag" key={project.tags.indexOf(tag)}>{tag}</p>)}
                         </div>
-                        <p className="project_caption_description">{project.description[language]}</p>
                         <div className="project_caption_links">
                             { project.links.map(link =>
                                 <a href={link.link}className="project_caption_links_button" key={project.links.indexOf(link)} target="_blank" rel="noreferrer">{link.title[language]}</a>
                             )}
                         </div>
+                        { project.description[language].map(paragraph => <p className="project_caption_description" key={project.description[language].indexOf(paragraph)}>{paragraph}</p>) }
                     </section>
                     <section className="project_images">
                         { windowWidth > 1100 &&

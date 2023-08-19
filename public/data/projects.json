@@ -8,8 +8,8 @@
         },
         "tags": ["React", "Redux", "JavaScript", "Sass"],
         "description": {
-            "en": "Oh hi what a good description",
-            "fr": "Une super description"
+            "en": ["This is a fictional project, which started as project 6 of my OpenClassrooms front-end development program, made with HTML, CSS and JavaScript. I decided to remake it with React, Redux and Sass, using my new skills.", "Fisheye is a freelance photographer platform that allows photographers to display their work and get in contact with clients. Each photographer has a profile page with their details, a contact form, and their work, which can be displayed in full-screen thanks to the gallery. Clients can also like their favorite photos and videos."],
+            "fr": ["Ceci est un projet fictif, qui a commencé comme le projet 6 de mon parcours OpenClassrooms en développement front-end, fait avec HTML, CSS et JavaScript. J'ai décidé de le refaire avec React, Redux et Sass, à l'aide de mes nouvelles compétences.", "Fisheye est une plateforme de photographes freelance, qui permet aux photographes d'afficher leur travail et d'être mis en contact avec des clients. Chaque photographe a une page de profil avec ses informations, un formulaire de contact, ainsi que leur travail, qui peut être affiché en plein écran grâce à la galerie. Les clients peuvent également liker leurs photos et vidéos préférées."]
         },
         "images": [
             {
@@ -67,8 +67,8 @@
         },
         "tags": ["React", "Redux", "JavaScript", "CSS"],
         "description": {
-            "en": "Oh hi what a good descriptionOh hi what a good descriptionOh hi what a good descriptionOh hi what a good descriptionOh hi what a good descriptionOh hi what a good descriptionOh hi what a good descriptionOh hi what a good descriptionOh hi what a good descriptionOh hi what a good descriptionOh hi what a good descriptionOh hi what a good description",
-            "fr": "Une super description"
+            "en": ["This is a fictional project, which was project 14 of my OpenClassrooms front-end development program.", "HRNet is a human resources app that allows users to view and sort a list of employees, as well as add some. It was originally made with jQuery, and I was asked to remake it with React and Redux. I could choose one of four components to make into a custom React library: the select form field, the date picker, the validation modal, and the employee table. I chose the table, which is now an NPM package you can add to your own React projects. This 18kb component allows you to display complex data in a clean, color-customizable table, complete with pagination, a search system, and sorting by each category. I used Material UI for the three other components."],
+            "fr": ["Ceci est un projet fictif, qui était le projet 14 de mon parcours OpenClassrooms en développement front-end.", "HRNet est une application de ressources humaines qui permet à ses utilisateurs de visualiser et trier une liste d'employés, ainsi que d'en ajouter. La version d'origine était faite avec jQuery, et il m'était demandé de la refaire avec React et Redux. Je pouvais choisir l'un de quatre composants à transformer en une bibliothèque React personnalisée: le champ select, le sélecteur de date, la modale de validation et le tableau d'employés. J'ai choisi le tableau, qui est désormais un package NPM que vous pouvez ajouter à vos propres projets React. Ce composant de 18kb vous permet d'afficher des données complexes dans un tableau moderne et aux couleurs personnalisables, avec un système de pagination, de recherche et de tri par catégorie. J'ai utilisé Material UI pour les trois autres composants."]
         },
         "images": [
             {
@@ -97,8 +97,22 @@
             {
                 "link": "https://github.com/chloeadriancreates/hrnet",
                 "title": {
-                    "en": "See code on GitHub",
-                    "fr": "Voir le code sur GitHub"
+                    "en": "See HRNet code on GitHub",
+                    "fr": "Voir le code d'HRNet sur GitHub"
+                }
+            },
+            {
+                "link": "https://www.npmjs.com/package/@chloeadriancreates/custom-react-table",
+                "title": {
+                    "en": "See NPM package",
+                    "fr": "Voir le package NPM"
+                }
+            },
+            {
+                "link": "https://github.com/chloeadriancreates/custom-react-table",
+                "title": {
+                    "en": "See library code on GitHub",
+                    "fr": "Voir le code de la bibliothèque sur GitHub"
                 }
             }
         ]
@@ -112,8 +126,8 @@
         },
         "tags": ["Figma"],
         "description": {
-            "en": "Oh hi what a good description",
-            "fr": "Une super description"
+            "en": ["This is a fictional project, which was project 10 of my OpenClassrooms front-end development program.", "Learn@Home is a tutoring app that puts volunteers and students in contact. I was asked to study the needs of both sets of users and use this information to design the app for both mobile and desktop screens. After making diagrams to gather all the features needed, I started by sketching all the screens, then made a low-fidelity, wireframe version, and finished with the high-fidelity design and its prototype. You can find all these stages in the Figma file."],
+            "fr": ["Ceci est un projet fictif, qui était le projet 10 de mon parcours OpenClassrooms en développement front-end.", "Learn@Home est une application de soutien scolaire qui met en contact des bénévoles et des élèves. Il m'était demandé d'étudier les besoins des deux catégories d'utilisateurs et d'utiliser ces informations pour maquetter l'application pour des écrans mobile et desktop. Après avoir fait des diagrammes pour réunir toutes les fonctionnalités nécessaires, j'ai commencé par faire des croquis de tous les écrans, puis une version wireframe basse fidélité, et j'ai fini par la maquette haute fidélité et son prototype. Vous pouvez trouver toutes ces étapes dans le fichier Figma."]
         },
         "images": [
             {
@@ -227,8 +241,8 @@
         },
         "tags": ["React", "Redux", "JavaScript", "Sass"],
         "description": {
-            "en": "Oh hi what a good description",
-            "fr": "Une super description"
+            "en": ["This is a fictional project, which started as project 3 of my OpenClassrooms front-end development program, made with HTML and Sass. I decided to remake it with React, Redux and Sass, using my new skills.", "Ohmyfood is a platform that lets clients choose and order meals they will eat at a restaurant in advance. Each restaurant has a menu page, with their dishes sorted in categories. The user can like their favorite restaurants, as well as add dishes to their cart and see their order total by restaurant."],
+            "fr": ["Ceci est un projet fictif, qui a commencé comme le projet 3 de mon parcours OpenClassrooms en développement front-end, fait avec HTML and Sass. J'ai décidé de le refaire avec React, Redux et Sass, à l'aide de mes nouvelles compétences.", "Ohmyfood est une plateforme qui permet aux clients de choisir et commander des repas qu'ils mangeront sur place en restaurant. Chaque restaurant a une page de menu, avec ses plats triés par catégorie. L'utilisateur peut liker ses restaurants préférés, ainsi qu'ajouter des plats à son panier et voir son total de commande par restaurant."]
         },
         "images": [
             {
@@ -273,8 +287,8 @@
         },
         "tags": ["React", "JavaScript", "CSS"],
         "description": {
-            "en": "Oh hi what a good description",
-            "fr": "Une super description"
+            "en": ["This is a personal project. The demo is functional and you can use it to organize your own photos!", "I recently took on the mountain of a task that was scanning and backing up every single family photo in my possession. To make it easier to organize pictures by album, I created this React app that allows you to drag and drop pictures in the order you want, and renames them before download so they stay in that order on your device."],
+            "fr": ["Ceci est un projet personnel. L'application est fonctionnelle et vous pouvez l'utiliser pour trier vos propres photos !", "J'ai décidé récemment de scanner et sauvegarder toutes les photos de famille en ma possession. Pour me faciliter le tri par album, j'ai créé cette application React qui permet de glisser-déposer des photos dans l'ordre souhaité, et les renomme avant le téléchargement afin qu'elle reste dans cet ordre sur votre appareil."]
         },
         "images": [
             {
