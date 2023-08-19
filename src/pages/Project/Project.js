@@ -26,9 +26,9 @@ export default function Project() {
     useEffect(() => {
         if(project) {
             if(language === "fr") {
-                document.title = `${project.name} / Chloé Adrian – Développeuse front-end`;
+                document.title = `${project.name} | Chloé Adrian – Développeuse front-end`;
             } else {
-                document.title = `${project.name} / Chloé Adrian – Front-end developer`;
+                document.title = `${project.name} | Chloé Adrian – Front-end developer`;
             }
         }
     }, [project, language]);

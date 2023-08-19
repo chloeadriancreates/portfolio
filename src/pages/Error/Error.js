@@ -10,9 +10,9 @@ export default function Error() {
 
     useEffect(() => {
         if(language === "fr") {
-            document.title = `Page inexistante / Chloé Adrian – Développeuse front-end`;
+            document.title = `Page inexistante | Chloé Adrian – Développeuse front-end`;
         } else {
-            document.title = `This page doesn't exist / Chloé Adrian – Front-end developer`;
+            document.title = `This page doesn't exist | Chloé Adrian – Front-end developer`;
         }
     }, [language]);
 
