@@ -43,7 +43,7 @@
             }
 
             &_tag {
-                min-width: 8rem;
+                min-width: 6rem;
                 padding: 0.5rem 1rem 0.25rem;
                 border: variables.$border;
                 border-radius: 500px;
@@ -52,8 +52,8 @@
                 margin-bottom: 10px;
                 margin-right: 20px;
 
-                @include mixins.tinyScreens {
-                    min-width: 6rem;
+                @include mixins.smallMobileAndUp {
+                    min-width: 8rem;
                 }
 
                 @include mixins.mobileAndUp {
@@ -80,10 +80,10 @@
                     cursor: pointer;
                     color: variables.$chocolate;
                     background-color: variables.$banana;
-                    box-shadow: -70px 0px 30px -5px variables.$strawberry inset;
+                    box-shadow: -50px 0px 30px -5px variables.$strawberry inset;
 
-                    @include mixins.tinyScreens {
-                        box-shadow: -50px 0px 30px -5px variables.$strawberry inset;
+                    @include mixins.smallMobileAndUp {
+                        box-shadow: -70px 0px 30px -5px variables.$strawberry inset;
                     }
                 }
             }

@@ -65,7 +65,7 @@
             width: 100%;
 
             &_tag {
-                min-width: 8rem;
+                min-width: 6rem;
                 padding: 0.5rem 1rem 0.25rem;
                 border: variables.$border;
                 border-radius: 500px;
@@ -75,8 +75,8 @@
                 margin-right: 20px;
                 text-align: center;
 
-                @include mixins.tinyScreens {
-                    min-width: 6rem;
+                @include mixins.smallMobileAndUp {
+                    min-width: 8rem;
                 }
 
                 @include mixins.mobileAndUp {
@@ -111,7 +111,7 @@
                 background: variables.$coconut;
                 padding: 1rem 1.5rem;
                 font-family: variables.$display;
-                font-size: 1.5rem;
+                font-size: variables.$copy-mobile-large;
                 box-shadow: 15px 15px 0 rgba(79, 0, 11, 1);
                 margin-bottom: 40px;
                 margin-right: 15px;
@@ -142,7 +142,7 @@
                     z-index: -1;
                 }
 
-                &:hover {
+                &:hover, &:focus {
                     box-shadow: 15px 15px 0 rgba(79, 0, 11, 0);
                 }
             }

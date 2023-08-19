@@ -11,10 +11,9 @@
         font-family: variables.$display;
         font-size: variables.$display-mobile-large;
         text-align: center;
-        margin-top: 60px;
 
-        @include mixins.tinyScreens {
-            margin-top: 0;
+        @include mixins.smallMobileAndUp {
+            margin-top: 60px;
         }
 
         @include mixins.mobileAndUp {

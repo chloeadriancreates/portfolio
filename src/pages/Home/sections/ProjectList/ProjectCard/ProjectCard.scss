@@ -81,11 +81,11 @@
 
         &_name {
             font-family: variables.$display;
-            font-size: variables.$display-mobile-medium;
+            font-size: variables.$display-mobile-small;
             margin-bottom: 1rem;
 
-            @include mixins.tinyScreens {
-                font-size: variables.$display-mobile-small;
+            @include mixins.smallMobileAndUp {
+                font-size: variables.$display-mobile-medium;
             }
 
             @include mixins.tabletAndUp {
@@ -99,10 +99,10 @@
 
         &_type {
             font-family: variables.$copy;
-            font-size: variables.$copy-mobile-medium;
+            font-size: variables.$copy-mobile-small;
 
-            @include mixins.tinyScreens {
-                font-size: variables.$copy-mobile-small;
+            @include mixins.smallMobileAndUp {
+                font-size: variables.$copy-mobile-medium;
             }
 
             @include mixins.tabletAndUp {

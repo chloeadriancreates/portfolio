@@ -35,8 +35,8 @@
     }
 }
 
-@mixin tinyScreens {
-    @media screen and (max-width: 370px){
+@mixin smallMobileAndUp {
+    @media screen and (min-width: 370px){
         @content;
     }
 }

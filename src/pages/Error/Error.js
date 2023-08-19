@@ -9,7 +9,6 @@ export default function Error() {
     const { language } = useSelector((state) => state.language);
 
     useEffect(() => {
-        console.log(language);
         if(language === "fr") {
             document.title = `Page inexistante / Chloé Adrian – Développeuse front-end`;
         } else {
@@ -23,7 +22,9 @@ export default function Error() {
             <section className="error_section">
                 <h2 className="error_section_title">404</h2>
                 <p className="error_section_text">{language === "fr" ? "Oups! On dirait qu'un dragon a mis feu à la page que vous cherchiez." : "Woops! Looks like a dragon breathed fire on the page you were looking for."}</p>
-                <Link to={"/"} className="error_section_button">
+                <Link to={"/"}
+                className="error_section_button"
+                title={language === "fr" ? "Accueil" : "Homepage"}>
                     <div className="error_section_button_icon fa-solid fa-dragon"></div>
                     <p className="error_section_button_text">{language === "fr" ? "Désolé ! Je vous ramène à l'accueil ?" : "Sorry! Let's get you back home?"}</p>
                 </Link>

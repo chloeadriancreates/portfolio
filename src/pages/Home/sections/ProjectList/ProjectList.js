@@ -13,7 +13,6 @@ export default function ProjectList() {
     const [filteredProjects, setFilteredProjects] = useState([]);
 
     useEffect(() => {
-        console.log(projects);
         if(!projects.length) {
             getProjects(dispatch);
         } else {
