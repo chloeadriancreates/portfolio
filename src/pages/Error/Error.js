@@ -21,7 +21,7 @@ export default function Error() {
             <Header background="light" />
             <section className="error_section">
                 <h2 className="error_section_title">404</h2>
-                <p className="error_section_text">{language === "fr" ? "Oups! On dirait qu'un dragon a mis feu à la page que vous cherchiez." : "Woops! Looks like a dragon breathed fire on the page you were looking for."}</p>
+                <p className="error_section_text">{language === "fr" ? "Oups ! On dirait qu'un dragon a mis feu à la page que vous cherchiez." : "Woops! Looks like a dragon breathed fire on the page you were looking for."}</p>
                 <Link to={"/"}
                 className="error_section_button"
                 title={language === "fr" ? "Accueil" : "Homepage"}>
