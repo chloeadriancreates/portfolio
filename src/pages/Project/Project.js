@@ -37,6 +37,7 @@ export default function Project() {
         window.addEventListener("resize", () => {
             setWindowWidth(window.innerWidth);
         });
+        window.scrollTo({top: 0});
     }, []);
 
     if(project) {
