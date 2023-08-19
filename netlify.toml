@@ -2,3 +2,4 @@
   from = "/*"
   to = "/error"
   status = 404
+  force = true
