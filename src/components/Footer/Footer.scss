@@ -6,6 +6,7 @@
     @include mixins.flex(column, center, center);
     background: variables.$horizontalGradient;
     padding: 40px;
+    width: 100%;
 
     @include mixins.tabletAndUp {
         @include mixins.flex(row-reverse, space-between, center);

@@ -1,0 +1,97 @@
+@use "../../utils/mixins";
+@use "../../utils/variables";
+
+.error {
+    @include mixins.flex(column, flex-start, center);
+    min-height: 100vh;
+    
+    &_section {
+        @include mixins.flex(column, center, center);
+        flex-grow: 1;
+        margin: 40px 80px 140px;
+
+        & > *:not(:last-child) {
+            margin-bottom: 40px;
+        }
+
+        &_title {
+            font-family: variables.$display;
+            font-size: 8rem;
+            text-align: center;
+    
+            @include mixins.mobileAndUp {
+                font-size: 10rem;
+            }
+    
+            @include mixins.laptopAndUp {
+                font-size: 12rem;
+            }
+        }
+
+        &_text {
+            font-size: variables.$copy-desktop-small;
+            text-align: center;
+            
+            @include mixins.tabletAndUp {
+                max-width: 80%;
+            }
+        }
+    
+        &_button {
+            @include mixins.flex(column, center, center);
+            @include mixins.resetLink;
+            @include mixins.transition;
+            position: relative;
+            color: variables.$chocolate;
+            font-family: variables.$display;
+            font-size: variables.$display-mobile-small;
+            background-color: variables.$coconut;
+            border: variables.$border;
+            padding: 30px 40px;
+            width: 100%;
+            box-shadow: 20px 20px 0 rgba(79, 0, 11, 1);
+
+            @include mixins.tabletAndUp {
+                @include mixins.flex;
+                font-size: variables.$display-desktop-small;
+                max-width: 80%;
+            }
+    
+            @include mixins.laptopAndUp {
+                font-size: variables.$display-desktop-small;
+            }
+        
+            &::after {
+                content: "";
+                @include mixins.transition;
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background: variables.$verticalGradient;
+                top: 20px;
+                left: 20px;
+                z-index: -1;
+            }
+    
+            &:hover, &:focus {
+                cursor: pointer;
+                box-shadow: 20px 20px 0 rgba(79, 0, 11, 0);
+            }
+    
+            &_icon {
+                margin-bottom: 20px;
+                font-size: 4rem;
+
+                @include mixins.tabletAndUp {
+                    margin-bottom: 0;
+                    margin-right: 20px;
+                }
+            }
+    
+            &_text {
+                text-align: center;
+            }
+        }
+    }
+}

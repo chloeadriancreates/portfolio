@@ -8,15 +8,18 @@ import { store } from "./app/store";
 import { Provider } from "react-redux";
 import Home from "./pages/Home/Home";
 import Project from "./pages/Project/Project";
+import Error from "./pages/Error/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />
+    element: <Home />,
+    errorElement: <Error />
   },
   {
     path: "/project/:key",
-    element: <Project />
+    element: <Project />,
+    errorElement: <Error />
   }
 ]);
 
