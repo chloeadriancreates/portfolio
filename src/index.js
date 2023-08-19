@@ -20,6 +20,10 @@ const router = createBrowserRouter([
     path: "/project/:key",
     element: <Project />,
     errorElement: <Error />
+  },
+  {
+    path: "/error",
+    element: <Error />
   }
 ]);
 
