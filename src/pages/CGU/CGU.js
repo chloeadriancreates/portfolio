@@ -8,6 +8,10 @@ export default function CGU() {
     const { language } = useSelector((state) => state.language);
 
     useEffect(() => {
+        window.scrollTo({top: 0});
+    }, []);
+
+    useEffect(() => {
         if(language === "fr") {
             document.title = `Mentions légales | Chloé Adrian – Développeuse front-end`;
         } else {
