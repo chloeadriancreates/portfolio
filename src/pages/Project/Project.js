@@ -40,7 +40,9 @@ export default function Project() {
         window.scrollTo({top: 0});
     }, []);
 
-    if(project) {
+    if (project === undefined) {
+        return <Error />;
+    } else if(project) {
         return (
             <div>
                 <Header background="light" />
@@ -112,7 +114,5 @@ export default function Project() {
                 <Footer />
             </div>
         );
-    } else {
-        return <Error />;
     }
 }
