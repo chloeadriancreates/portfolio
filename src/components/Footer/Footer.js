@@ -8,7 +8,7 @@ export default function Footer() {
     const [emailLabel, setEmailLabel] = useState("Copy my email address");
 
     const copyEmail = () => {
-        navigator.clipboard.writeText("hello@chloeadrian.dev");
+        navigator.clipboard.writeText("chloeadriancreates@gmail.com");
         if(language === "fr") {
             setEmailLabel("Adresse mail copiée !");
         } else {
