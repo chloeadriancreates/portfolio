@@ -9,6 +9,7 @@ import { Provider } from "react-redux";
 import Home from "./pages/Home/Home";
 import Project from "./pages/Project/Project";
 import Error from "./pages/Error/Error";
+import CGU from "./pages/CGU/CGU";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/error",
     element: <Error />
+  },
+  {
+    path: "/cgu",
+    element: <CGU />
   }
 ]);
 

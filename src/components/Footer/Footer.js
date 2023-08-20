@@ -66,8 +66,7 @@ export default function Footer() {
             </nav>
             <div className="footer_text">
                 <p className="footer_text_copyright">{language === "fr" ? "Fait avec ♥ par Chloé Adrian en 2023" : "Made with ♥ by Chloé Adrian in 2023"}</p>
-                <Link to={"/"}
-                title={language === "fr" ? "Accueil" : "Home"}
+                <Link to={"/cgu"}
                 className="footer_text_link">
                     {language === "fr" ? "Mentions légales" : "General Conditions of Use"}
                 </Link>

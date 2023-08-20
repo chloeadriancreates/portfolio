@@ -1,0 +1,60 @@
+@use "../../utils/mixins";
+@use "../../utils/variables";
+
+.cgu {
+    margin: 30px;
+    
+    @include mixins.mobileAndUp {
+        margin: 80px;
+    }
+
+    @include mixins.laptopAndUp {
+        width: 70%;
+        margin: 80px auto;
+    }
+
+    &_title {
+        font-family: variables.$display;
+        font-size: variables.$display-mobile-medium;
+        text-align: center;
+        margin-bottom: 1rem;
+
+        @include mixins.smallMobileAndUp {
+            font-size: variables.$display-mobile-large;
+        }
+
+        @include mixins.mobileAndUp {
+            font-size: variables.$display-desktop-large;
+        }
+    }
+
+    &_subtitle {
+        font-size: variables.$copy-mobile-large;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        @include mixins.mobileAndUp {
+            font-size: variables.$copy-desktop-large;
+        }
+    }
+
+    &_heading {
+        font-family: variables.$display;
+        font-size: variables.$display-mobile-small;
+        margin: 1.5rem 0 0.5rem;
+
+        @include mixins.mobileAndUp {
+            font-size: variables.$display-desktop-small;
+            margin: 2rem 0 1rem;
+        }
+    }
+
+    &_text {
+        font-size: variables.$copy-mobile-small;
+
+        @include mixins.mobileAndUp {
+            font-size: variables.$copy-desktop-small;
+        }
+    }
+    
+}
